@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>etch-a-sketch</title>
+  <meta name="description" content="The Odin Project_ etch-a-sketch">
+  <meta name="6865" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <style></style>
+</head>
+
+<body>
+  <main>
+    <h1>Etch-A-Sketch</h1>
+    <div class="body-container">
+      <div class="button-container">
+        <p>Select a color to start.</p>
+        <button class="button" id="blue">blue</button>
+        <button class="button" id="red">red</button>
+        <button class="button" id="random" >rainbow</button>
+        <button class="button" id="greyscale">greyscale</button>
+        <button class=" button btn-clear" id="reset">clear</button>
+        <div class="slidecontainer">
+          <label for="slider-range">Set the grid size</label>
+          <input type="range" min="4" max="100" value="10" class="slider" id="slider-range">
+        </div>
+      </div>  
+      <div class="drawing-container border" id="container"></div>
+    </div>
+  </main>
+<script></script>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

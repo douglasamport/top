@@ -1,0 +1,28 @@
+---
+:dragons:
+- !ruby/object:Dragon
+  strength: 183
+  speed: 132
+  color: red
+:fairies:
+- !ruby/object:Fairy
+  strength: 1
+  speed: 42
+  intelligence: 39
+- !ruby/object:Fairy
+  strength: 1
+  speed: 42
+  intelligence: 37
+:orges:
+- !ruby/object:Ogre
+  strength: 114
+  speed: 121
+  smell: bad
+- !ruby/object:Ogre
+  strength: 100
+  speed: 157
+  smell: bad
+- !ruby/object:Ogre
+  strength: 194
+  speed: 108
+  smell: bad

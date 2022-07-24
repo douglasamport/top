@@ -1,0 +1,14 @@
+#aboutpageWrapper {
+    background: url('../content/wine.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-heading {
+    padding: 0 0 0 .2em;
+    margin:auto; 
+    font-family: 'Outfit', 'Roboto', Helvetica;
+    font-weight: 300;
+    font-size: 2.5em;
+    color: rgb(214, 163, 87);
+}

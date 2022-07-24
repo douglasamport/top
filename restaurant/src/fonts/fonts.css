@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./Outfit-Thin.ttf');
+    font-weight: 100;
+    font-style: 'Thin';
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./Outfit-ExtraLight.ttf');
+    font-weight: 200;
+    font-style: 'Extra-light';
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./Outfit-Light.ttf');
+    font-weight: 300;
+    font-style: 'Light';
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./Outfit-Regular.ttf');
+    font-weight: 400;
+    font-style: 'Regular';
+}

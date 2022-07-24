@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+
+</head>
+
+<body>
+  <div class="gameMessageContainer invisible" style="opacity: 0">
+    <div class="gameMessage">
+      Player 1 Wins
+    </div>
+  </div>
+
+  <div class="overlay">
+    <p class="msg">Chose your Opponent</p>
+    <div class="overlaySub">
+      <span>
+        <p class="msg">Player</p>
+      </span>
+      <button class="transparentBut" name="player2">
+        <img class="playerImg" src="/img/person-svgrepo-com.svg" alt="Player icon">
+      </button>
+    </div>
+    <div class="overlaySub computerCont" >
+      <span>
+        <p class="msg">Computer</p>
+      </span>
+      <button class="transparentBut" name="computer">
+        <img class="cpu" src="/img/cpu-svgrepo-com.svg" alt="CPU icon">
+      </button>
+    </div>
+  
+  </div>
+
+
+  <div id="navbarContainer">
+    <div id="navContentContainer">
+      <div id="logoContainer">
+          <h1>Tic tac toe</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main">
+    
+    <div class="leftContainer">
+      <div id="playerContainer">
+        
+        <div class="playerWrapper" id="playerOneCont">
+          <div class="playerImageContainer">
+            <img src="/img/person-svgrepo-com.svg" alt="person icon" id="player1" class="filter-gold plrImg">
+          </div>
+          <p class="">Player 1</p>
+          <div class="winCounter" id="player1WinCounter"></div>
+        </div>
+      
+        <div class="playerWrapper" id="playerTwoCont">
+          <div class="playerImageContainer">
+            <img src="/img/person-svgrepo-com.svg" alt="person icon" id="player2" class="plrImg">
+          </div>
+          <p id="player2Label">Player 2</p>
+
+          <div class="winCounter" id="player2WinCounter"></div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="boardWrapper">
+      <div id="boardContainer" class="">
+        <div class="rows rowWrap" id="rows">
+          <div class="cell" id="cell1"></div>
+          <div class="cell" id="cell2"></div>
+          <div class="cell" id="cell3"></div>
+        
+          <div class="cell" id="cell4"></div>
+          <div class="cell" id="cell5"></div>
+          <div class="cell" id="cell6"></div>
+        
+          <div class="cell" id="cell7"></div>
+          <div class="cell" id="cell8"></div>
+          <div class="cell" id="cell9"></div>
+        </div>
+      </div>
+
+      <div id="resetContainer">
+       
+        <div id="resetBtnCont" class="buttonContainer">
+          <button id="resetBtn" class="button">Reset</button>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+  <script src="scripts/gameboard.js"></script>
+  <script src="scripts/tree.js"></script>
+  <script src="scripts/player.js"></script>
+
+  <script src="scripts/displayController.js"></script>
+  <script src="scripts/controlFlow.js"></script>
+</body>
+</html>

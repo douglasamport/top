@@ -1,0 +1,257 @@
+/* @import 'https://raw.githubusercontent.com/jonathantneal/system-font-css/gh-pages/system-font.css'; */
+
+body {
+  background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink)
+    fixed;
+  color: rgb(0, 0, 0);
+  font: normal 16px system-ui, sans-serif;
+  text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+  margin: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  padding: 2em;
+  margin: 10px 0;
+  min-width: 270px;
+  max-width: 500px;
+  height: fit-content;
+  overflow-wrap: break-word;
+  line-height: 0.4em;
+  background-color: #ffbe0b;
+  box-shadow: inset 0 -5px 12px rgba(0, 0, 0, 0.507),
+    0 5px 10px rgba(34, 35, 39, 0.678), 0 15px 40px rgba(72, 75, 85, 0.2);
+}
+
+#navbarContainer {
+  margin: 3em auto 0px auto;
+  padding: 0 2em 0 2em;
+  display: flex;
+  max-width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  font-size: 16px;
+}
+
+#logoContainer {
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(119, 58, 58, 0) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  height: fit-content;
+  line-height: 0%;
+}
+
+#addBookButton {
+  border: none;
+
+  border-radius: 10px;
+  padding: 1em 2em;
+  min-width: 120px;
+  background-color: #ff006e;
+  color: white;
+  box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.407),
+    0 3px 5px rgba(34, 35, 39, 0.5), 0 8px 20px rgba(72, 75, 85, 0.2);
+}
+
+#addBookButton:hover,
+#sendFormButton:hover {
+  background-color: #fa3d8f;
+}
+
+#addBookButton:active,
+#sendFormButton:active {
+  background-color: #6b012f;
+}
+
+#library {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  max-width: 100%;
+  gap: 3em 3em;
+  margin: 0 auto;
+  padding: 2em 2em;
+  border-radius: 10px;
+  background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 90%);
+}
+
+.visuallyHidden {
+  display: none;
+}
+
+#submissionFormContainer {
+  /* /* background: white; */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center; */
+  /* gap: 0 1em; */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2em 2em;
+}
+
+#formContaner {
+  background: black;
+  height: fit-content;
+  /* gap: 0 1em; */
+  width: 100%;
+  /* margin: 0 auto; */
+  /* padding: 2em 2em; */
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#sendFormButton {
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  min-width: 120px;
+  background-color: #ff006e;
+  color: white;
+  box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.407),
+    0 3px 5px rgba(34, 35, 39, 0.5), 0 8px 20px rgba(72, 75, 85, 0.2);
+}
+
+span {
+  margin-top: 1em;
+  background-color: orange;
+}
+
+.input {
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.37), 0 3px 5px rgba(34, 35, 39, 0.5),
+    0 8px 20px rgba(72, 75, 85, 0.2);
+}
+
+#readStatus,
+#pages {
+  max-width: 150px;
+  margin-left: 20px;
+}
+
+#bookAuthor {
+  margin-left: 20px;
+}
+
+.twoButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.deleteButton {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(247, 211, 113);
+  background: transparent;
+  border: none;
+  transform: scaleX(1.25);
+}
+
+.deleteButton:hover {
+  color: rgb(255, 244, 215);
+}
+
+.toggleReadButton {
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em 1.2em;
+  min-width: 60px;
+  background-color: #ff550075;
+  color: white;
+  box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.407),
+    0 3px 5px rgba(34, 35, 39, 0.5), 0 8px 20px rgba(72, 75, 85, 0.2);
+}
+
+@media only screen and (min-width: 1000px) {
+  #navbarContainer,
+  #library,
+  #submissionFormContainer {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  #navbarContainer,
+  #library,
+  #submissionFormContainer {
+    max-width: 670px;
+  }
+
+  #submissionFormContainer {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  #newBookForm {
+    display: flex;
+    flex-flow: column;
+  }
+
+  #readStatus,
+  #pages,
+  #bookAuthor {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .input {
+    max-width: 100%;
+  }
+
+  #readStatus,
+  #pages {
+    max-width: 100%;
+  }
+
+  #sendFormButton {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #navbarContainer,
+  #library,
+  #submissionFormContainer {
+    max-width: 340px;
+    line-height: 0.8em;
+  }
+
+  #navbarContainer {
+    flex-flow: column;
+    margin-top: 3em;
+  }
+
+  #submissionFormContainer {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  #readStatus,
+  #pages,
+  #bookAuthor {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  #sendFormButton {
+    margin-top: 20px;
+  }
+}

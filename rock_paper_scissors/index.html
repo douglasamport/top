@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Rock Paper Scissors</title>
+  <meta name="Rock Paper Scissors project" content="For the odin project">
+  <meta name="douglas.amport" content="Rock Paper Scissors">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style></style>
+</head>
+
+<body>
+  <div class="container ">
+    <div class="row twelve columns ">
+      <div class="margin20 make-flex-column">
+        <h3 class="blue">Rock Paper Scissors</h3>
+        <p>Select either Rock, Paper or Scissors to play. First to five wins!</p>
+      </div>
+    </div>
+    <div id="header-div" class="row twelve columns make-flex-column">
+      <div class="twelve columns margin5 make-flex-row">
+        <button id="rock" name="rock" type="button" class="">Rock</button>
+        <button id="paper" name="paper" type="button" class="flex-child-sizing">Paper</button>
+        <button id="scissors" name="scissors" type="button" class="flex-child-sizing">Scissors</button>
+      </div>
+    </div>
+    <div class="row twelve columns">
+      <div class="twelve columns margin5 make-flex-column">
+        <p id="countdown" class="msg-one"></p>
+        <p id="message" class="msg"></p>
+        <div class="twelve columns make-flex-row">
+          <p id="player-score" class="msg"></p>
+          <p id="computer-score" class="msg margin-left"></p>
+        </div>
+        <p id="final-msg" class="msg-one"></p>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </div>
+</body>
+
+</html>

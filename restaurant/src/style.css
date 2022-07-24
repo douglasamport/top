@@ -1,0 +1,65 @@
+/*import module stylesheets*/
+@import "./modules/navagation_style.css";
+@import "./modules/homepage_style.css";
+@import "./modules/cusine_style.css";
+@import "./modules/about_style.css";
+
+/*import fonts*/
+
+@import './fonts/fonts.css';
+
+/*universal styles*/
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    color: red;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+}
+
+
+
+ul {
+    list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.outfit200 {
+    font-family: 'Outfit', 'Roboto', Helvetica;
+    font-weight: 200;
+}
+
+.module-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.center-container {
+    background: radial-gradient(closest-side,rgba(0, 0, 0, 0.9) 25%, rgba(0, 0, 0, 0.7)60%, rgba(0, 0, 0, 0));
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 6em;
+}
+
+.copy {
+    padding: 1em;
+    color: rgb(252, 236, 221);
+    font-size: 1.2em;
+}

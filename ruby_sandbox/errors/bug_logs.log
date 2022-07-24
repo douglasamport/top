@@ -1,0 +1,6 @@
+# Logfile created on 2021-04-21 09:02:59 -0400 by logger.rb/v1.4.3
+D, [2021-04-21T09:03:43.950108 #32087] DEBUG -- : I'm a debug log
+D, [2021-04-21T09:07:06.706875 #32125] DEBUG -- : The esceptions sent us 
+D, [2021-04-21T09:09:02.673328 #32172] DEBUG -- : The exceptions sent us 
+D, [2021-04-21T09:09:02.674604 #32172] DEBUG -- : The exceptions sent us 2
+I, [2021-04-21T09:21:06.704846 #32310]  INFO -- : user did something interesting

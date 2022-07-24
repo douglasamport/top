@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Rock Paper Scissors</title>
+  <meta name="Rock Paper Scissors project" content="For the odin project">
+  <meta name="douglas.amport" content="Rock Paper Scissors">
+
+  <style></style>
+</head>
+
+<body>
+  <main>
+
+  </main>
+
+  <script>
+
+    function game() {
+      alert(`We\'ll play 'best of five'`)
+      let tie = 0;
+      let playerWins = 0;
+      let computerWins = 0;
+      let i = 5;
+      while (i > 0) {
+        let msgRound = singleRound()
+        if (msgRound.match(/win/i)) {
+          playerWins++;
+        }
+        else if (msgRound.match(/lose/i)) {
+          computerWins++;
+        }
+        else if (msgRound.match(/tie/i)) {
+          tie++;
+        }
+        let msgUpdate = `${msgRound} 
+                    Current score is..
+                    Player: ${playerWins} 
+                    Computer: ${computerWins} 
+                    Ties: ${tie}
+                    ${i - 1} rounds to go.`
+        alert(msgUpdate)
+        i--
+      }
+
+      let msgFinal = finalCount(computerWins, playerWins)
+
+      alert(`${msgFinal}
+                    Player: ${playerWins} 
+                    Computer: ${computerWins} 
+                    Ties: ${tie}`);
+      return `${msgFinal}
+                    Player: ${playerWins} 
+                    Computer: ${computerWins} 
+                    Ties: ${tie}`;
+    }
+
+    function finalCount(computer, player) {
+      if (computer === player) {
+        return `Tie!  Final score is..`
+      }
+      else if (computer > player) {
+        return `You Lose!  Final score is..`
+      }
+      else {
+        return `You Win!  Final score is..`
+      }
+    }
+
+    function singleRound() {
+      let playerSelection = prompt('Let\'s play. Please enter "Rock, Paper or Scissors"');
+      let computerSelection = determineComputerPlay();
+
+      playerSelection = checkPlayerInput(playerSelection);
+      playerSelection = playerSelection.toLowerCase()
+
+      let msg = decideWinner(computerSelection, playerSelection);
+      return msg;
+    }
+
+    function determineComputerPlay() {
+      let computerOption = ['rock', 'paper', 'scissors'];
+      let x = computerOption[Math.floor(Math.random() * computerOption.length)];
+      return x;
+    }
+
+    function checkPlayerInput(str) {
+      let value = false;
+      if (str.match(/^rock$/i) ||
+        str.match(/^paper$/i) ||
+        str.match(/^scissors$/i)) {
+        return str;
+      }
+      else {
+        while (!value) {
+          str = prompt('That\'s not an option! Please enter "Rock, Paper or Scissors".')
+          if (str.match(/^rock$/i) ||
+            str.match(/^paper$/i) ||
+            str.match(/^scissors$/i)) { value = true };
+        }
+      }
+      return str
+    }
+
+    function decideWinner(computer, player) {
+      if (player === 'paper' &
+        computer === 'rock') {
+        return `You Win! ${player} covers ${computer}. `;
+      }
+      if (player === 'rock' &
+        computer === 'scissors') {
+        return `You Win! ${player} crushes ${computer}. `;
+      }
+      if (player === 'scissors' &
+        computer === 'paper') {
+        return `You Win! ${player} cuts ${computer}. `;
+      }
+      if (computer === 'paper' &
+        player === 'rock') {
+        return `You Lose! ${computer} covers ${player}. `
+      }
+      if (computer === 'rock' &
+        player === 'scissors') {
+        return `You Lose! ${computer} crushes ${player}. `
+      }
+      if (computer === 'scissors' &
+        player === 'paper') {
+        return `You Lose! ${computer} cuts ${player}. `
+      }
+      else {
+        return 'It\'s a tie! '
+      }
+    }
+
+  </script>
+</body>
+
+</html>

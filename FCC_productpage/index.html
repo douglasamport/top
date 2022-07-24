@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC: Product Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="page-container">
+
+  <header id="header">
+    <div class="header-container">
+      <div class=logo-container>
+        <img src="https://fccimages-amportprojects.s3.us-east-2.amazonaws.com/PowerLogo200x200.png" alt="power climbing logo" id="header-img">
+      </div>
+
+      <nav id="nav-bar">
+        <a href="#ref1" class="nav-link">Train</a>
+        <a href="#ref2" class="nav-link">Philosophy</a>
+        <a href="#ref3" class="nav-link">Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <div class="hero-container">
+        <img src="https://p0.pikrepo.com/preview/14/526/woman-wearing-black-crew-neck-t-shirt-and-black-pants.jpg" alt="a man and woman performaing a plank exercise, looking intense" id="hero-img">
+        <div class="hero-text-block centered bold">
+          <p>Train <span class="highlight">Power</span> Climb Harder</p>
+        </div>
+      </div>
+
+      <a id="ref2"></a>
+
+      <div class="phil-container">
+        <div class="philosophy">
+          <h2 class="bolder title highlight">Our Philosophy
+          </h2>
+          <p class="semi-bold statement"><span class="autocaps highlight">Strength is paramount</span><br>Strength is foundational for climbing performance, general heath, and quality of life.</p>
+          <p class="semi-bold statement"><span class="autocaps highlight">Time is limited</span><br>Efficient and effective programming to achieve your goals faster.</p>
+          <p class="semi-bold statement"><span class="autocaps highlight">Qualified Instruction</span><br>Ensure proper technique and reduce the risk injury.</p>
+        </div>
+        <div id="headshot-container">
+          <img src="https://www.maximropes.com/fileadmin/user_upload/Team/Kris_Hampton/kris-hampton-portrait-530x528.jpg" alt="coach headshot" id="headshot">
+          <p class="semi-bold">This is a demo web-page. Image of climbing coach Kris Hampton From <a href="https://www.powercompanyclimbing.com/"> powercompany.com</a></p>
+        </div>
+      </div>
+
+      <a id="ref1"></a>
+
+      <div class="learn-container">
+        <div id="youtube-container">
+          <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/7iiGwdTSuRU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="learn-text-container">
+          <h2 class="bolder title highlight2">How we coach
+          </h2>
+          <p class="semi-bold statement"><span class="autocaps highlight2">Online Resources</span><br>We produce high quality resources so you can excell on your own terms and in your own time. </p>
+          <p class="semi-bold statement"><span class="autocaps highlight2">In-Person Training</span><br>Work with us 1-on-1 or team up within your circle. We ensure a personalized approach to climbing training, fitness and health.</p>
+
+          <p class="semi-bold statement"><span class="autocaps highlight2">Online Fitness Coaching</span><br>We don't belive in a "one size fits all" approach. We review your sessions and meet via zoom to provide feedback and guidence.</p>
+        </div>
+      </div>
+
+      <a id="ref3"></a>
+
+      <div class="contact-container">
+        <div id="form-container">
+          <h2 id="form-title" class="bolder autocaps highlight title"> Train with us</h2>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="name"><input type="text" name="name" id="name" placeholder="Name"></label>
+            <label for="email"><input type="email" name="email" id="email" placeholder="e-mail" required></label>
+            <input type="submit" id="submit" class="button">
+          </form>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p id="footer-text" class="semi-bold">This website is for demonstration purposes only. If you want actual training services please check out <a href="http://powercompany.com">powercompany.com</a></p>
+      </div>
+
+    </div>
+  </main>
+
+  <!--The FCC checker wont pass the tests unless this tag is included-->
+  <video id="video" controls>
+    <source src="https://youtu.be/7iiGwdTSuRU" type="video/mp4">
+  </video>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

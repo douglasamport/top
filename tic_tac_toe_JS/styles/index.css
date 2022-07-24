@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font: normal 16px system-ui, sans-serif;
+	text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+    margin: 1rem;
+}
+
+.gameMessageContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.80);
+    top: 0px;
+}
+
+.gameMessage {
+    color: white;
+    font-size: 10vh;
+}
+
+.overlay {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.80);
+    top: 0px;
+}
+
+.overlaySub {
+    margin: 5vh;
+}
+
+img.playerImg, img.cpu {
+    height: 20vh;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(235deg) brightness(103%) contrast(106%);
+}
+
+img.cpu:hover, img.playerImg:hover {
+    filter: invert(81%) sepia(54%) saturate(2130%) hue-rotate(1deg) brightness(105%) contrast(104%);
+    background-color: transparent;
+}
+
+.transparentBut {
+    border: none;
+    background-color: transparent;
+}
+
+.transparentBut:hover {
+    background-color: transparent;
+}
+.msg {
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#navbarContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    color: rgba(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#navContentContainer {
+    padding:0 2em 0 2em;
+    color: rgba(255, 255, 255);
+    max-width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: row;
+    margin: 9em auto;
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+}
+
+.invisible {
+    display: none;
+}
+
+.leftContainer {
+    flex: auto 1 auto;
+    width: 25%;
+}
+
+.filter-gold {
+    filter: invert(81%) sepia(54%) saturate(2130%) hue-rotate(1deg) brightness(105%) contrast(104%);
+}
+
+.filter-silver {
+    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(118deg) brightness(93%) contrast(91%);
+}
+
+#playerContainer {
+  
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.playerWrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em auto;
+    padding: 10px;
+}
+
+.playerImageContainer {
+    position: relative;
+    height: 56px;
+}
+
+.winCounter {
+    height: 36px;
+}
+
+#computer {
+    height: 48px;
+    width: 48px;
+}
+
+.star {
+    height: 24px;
+    width: 24px;
+    padding: 5px;
+    color: green;
+}
+
+.boardWrapper {
+    flex: auto 4 auto;
+    width: 75%;
+}
+#boardContainer {
+    margin: auto;
+    width: 100%;
+}
+
+.rowWrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cell {
+    min-width: 33.33%;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+    line-height: 100%;
+    font-size: 10em;
+}
+
+.cell:hover {
+    background-color: rgb(23, 105, 187);
+}
+
+#cell1 {
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+}
+#cell2 {
+    border-right: 8px solid black;
+    border-left: 8px solid black;
+    border-bottom: 8px solid black;
+}
+#cell3 {
+    border-left: 8px solid black;
+    border-bottom: 8px solid black;
+}
+#cell4 {
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+}
+#cell5 {
+    border: 8px solid black;
+}
+#cell6 {
+    border-top: 8px solid black;
+    border-left: 8px solid black;
+    border-bottom: 8px solid black;
+}
+#cell7 {
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+}
+#cell8 {
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+    border-left: 8px solid black;
+}
+#cell9 {
+    border-top: 8px solid black;
+    border-left: 8px solid black;
+}
+
+#resetContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer {
+    margin: 4em auto;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 1em;
+    box-shadow: none;
+}
+button:hover {
+    background-color: darkgrey;
+}
+
+.message #startButton {
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px){
+    #main {
+        max-width: 50%;
+    }
+    .cell {
+        font-size: 0ch;
+    }
+}

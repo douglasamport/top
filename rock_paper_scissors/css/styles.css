@@ -1,0 +1,63 @@
+.blue {
+	color: blue;
+}
+
+.msg {
+	font-size: 1.5em;
+}
+
+#message {
+	white-space: pre;
+	text-align: center;
+}
+
+.msg-one {
+	font-size: 1.75em;
+}
+
+.opacity {
+	opacity: 50%;
+}
+
+.full-width {
+	width: 375px;
+}
+
+button.full-width {
+	margin-top: 1vh;
+}
+
+.margin5 {
+	margin: 5vw auto 0 auto;
+}
+
+.margin20 {
+	margin: 10vw auto 0 auto;
+}
+
+div.spacing {
+	min-width: 115px;
+}
+
+.margin-left {
+	margin-left: 5vw;
+}
+
+.make-flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.make-flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	margin: 2px 5px 2px 5px;
+	min-width: 115px;
+}
